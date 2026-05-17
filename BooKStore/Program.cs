@@ -1,11 +1,12 @@
 
+using AutoMapper;
 using BooKStore.Interfaces;
+using BooKStore.Middlewares;
+using BooKStore.Profiles;
 using BooKStore.Repositories;
 using BooKStore.Services;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-using AutoMapper;
-using BooKStore.Profiles;
 
 namespace BooKStore
 {
@@ -35,6 +36,7 @@ namespace BooKStore
 
             // Services
             builder.Services.AddScoped<BookService>();
+            builder.Services.AddScoped<AuthorService>();
 
 
 
@@ -60,6 +62,7 @@ namespace BooKStore
 
             app.UseAuthorization();
 
+            app.UseMiddleware<GlobalExceptionMiddleware>();
 
             app.MapControllers();
 

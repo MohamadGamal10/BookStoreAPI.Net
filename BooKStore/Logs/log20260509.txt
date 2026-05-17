@@ -345,3 +345,912 @@ FROM [Books] AS [b]
 2026-05-09 15:40:19.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
 2026-05-09 15:40:19.939 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 11.5574ms
 2026-05-09 15:40:19.968 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.0951ms
+2026-05-09 18:57:10.330 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-09 18:57:10.438 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-09 18:57:10.440 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-09 18:57:10.442 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-09 18:57:10.477 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-09 18:57:10.500 +03:00 [INF] Applying migration '20260509155619_addAuthor'.
+2026-05-09 18:57:10.678 +03:00 [INF] Executed DbCommand (103ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Books]') AND [c].[name] = N'Author');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Books] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Books] DROP COLUMN [Author];
+2026-05-09 18:57:10.699 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Books] ADD [AuthorId] int NOT NULL DEFAULT 0;
+2026-05-09 18:57:10.713 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Authors] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [BirthDate] date NOT NULL,
+    CONSTRAINT [PK_Authors] PRIMARY KEY ([Id])
+);
+2026-05-09 18:57:10.738 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Books_AuthorId] ON [Books] ([AuthorId]);
+2026-05-09 18:57:10.769 +03:00 [ERR] Failed executing DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Books] ADD CONSTRAINT [FK_Books_Authors_AuthorId] FOREIGN KEY ([AuthorId]) REFERENCES [Authors] ([Id]) ON DELETE CASCADE;
+2026-05-09 18:59:05.772 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-09 18:59:05.838 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-09 18:59:05.840 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-09 18:59:05.841 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-09 18:59:05.862 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-09 18:59:05.872 +03:00 [INF] Applying migration '20260509155619_addAuthor'.
+2026-05-09 18:59:05.962 +03:00 [INF] Executed DbCommand (51ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Books]') AND [c].[name] = N'Author');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Books] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Books] DROP COLUMN [Author];
+2026-05-09 18:59:05.967 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Books] ADD [AuthorId] int NOT NULL DEFAULT 0;
+2026-05-09 18:59:05.979 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Authors] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [BirthDate] date NOT NULL,
+    CONSTRAINT [PK_Authors] PRIMARY KEY ([Id])
+);
+2026-05-09 18:59:05.986 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Books_AuthorId] ON [Books] ([AuthorId]);
+2026-05-09 18:59:06.018 +03:00 [ERR] Failed executing DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Books] ADD CONSTRAINT [FK_Books_Authors_AuthorId] FOREIGN KEY ([AuthorId]) REFERENCES [Authors] ([Id]) ON DELETE CASCADE;
+2026-05-09 19:01:12.548 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-09 19:01:12.607 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-09 19:01:12.610 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-05-09 19:01:12.611 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-05-09 19:01:12.638 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-05-09 19:01:12.656 +03:00 [INF] Applying migration '20260509155619_addAuthor'.
+2026-05-09 19:01:12.736 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Books]') AND [c].[name] = N'Author');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Books] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Books] DROP COLUMN [Author];
+2026-05-09 19:01:12.739 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Books] ADD [AuthorId] int NOT NULL DEFAULT 0;
+2026-05-09 19:01:12.742 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Authors] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    [BirthDate] date NOT NULL,
+    CONSTRAINT [PK_Authors] PRIMARY KEY ([Id])
+);
+2026-05-09 19:01:12.743 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX [IX_Books_AuthorId] ON [Books] ([AuthorId]);
+2026-05-09 19:01:12.746 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Books] ADD CONSTRAINT [FK_Books_Authors_AuthorId] FOREIGN KEY ([AuthorId]) REFERENCES [Authors] ([Id]) ON DELETE CASCADE;
+2026-05-09 19:01:12.751 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260509155619_addAuthor', N'8.0.0');
+2026-05-09 19:03:49.481 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 19:03:49.652 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 19:03:49.859 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 19:03:49.877 +03:00 [INF] Hosting environment: Development
+2026-05-09 19:03:49.904 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 19:03:50.376 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 19:03:50.985 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 626.2268ms
+2026-05-09 19:03:51.083 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:03:51.112 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 28.197ms
+2026-05-09 19:03:52.274 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:03:52.293 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:03:52.330 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 37.2761ms
+2026-05-09 19:03:52.432 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 157.7998ms
+2026-05-09 19:03:52.728 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 19:03:52.771 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.3499ms
+2026-05-09 19:03:55.215 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:03:55.275 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.0237ms
+2026-05-09 19:03:55.911 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-09 19:03:55.936 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:03:56.008 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:04:00.132 +03:00 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-09 19:04:00.235 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Models.Book, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 19:04:00.293 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 4265.9096ms
+2026-05-09 19:04:00.303 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:04:00.325 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 400 null application/json; charset=utf-8 4414.1275ms
+2026-05-09 19:08:38.715 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 19:08:38.858 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 19:08:39.057 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 19:08:39.064 +03:00 [INF] Hosting environment: Development
+2026-05-09 19:08:39.067 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 19:08:39.575 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 19:08:40.159 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 598.0641ms
+2026-05-09 19:08:40.290 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:08:40.323 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 32.8932ms
+2026-05-09 19:08:40.372 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:08:40.533 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 162.6754ms
+2026-05-09 19:08:40.677 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 19:08:40.717 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.5915ms
+2026-05-09 19:08:42.113 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:08:42.124 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 13.8544ms
+2026-05-09 19:08:44.313 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:08:44.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.375ms
+2026-05-09 19:11:53.012 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7171/api/Books - application/json 87
+2026-05-09 19:11:53.157 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-09 19:11:53.351 +03:00 [INF] Route matched with {action = "Add", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(BooKStore.Dtos.Book.CreateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:11:57.665 +03:00 [INF] Executed DbCommand (166ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title], [publishedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2026-05-09 19:11:57.834 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Models.Book, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 19:11:57.939 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Add (BooKStore) in 4569.4191ms
+2026-05-09 19:11:57.945 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-09 19:11:57.967 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7171/api/Books - 201 null application/json; charset=utf-8 4971.8844ms
+2026-05-09 19:20:03.119 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 19:20:03.242 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 19:20:03.465 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 19:20:03.478 +03:00 [INF] Hosting environment: Development
+2026-05-09 19:20:03.481 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 19:20:04.522 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 19:20:05.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 778.9145ms
+2026-05-09 19:20:05.430 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:20:05.441 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:20:05.456 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 25.9361ms
+2026-05-09 19:20:05.639 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 198.6296ms
+2026-05-09 19:20:05.820 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 19:20:05.883 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.619ms
+2026-05-09 19:20:07.476 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:20:07.489 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 14.1213ms
+2026-05-09 19:20:09.490 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-09 19:20:09.518 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:20:09.601 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:20:10.830 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:20:10.898 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.8208ms
+2026-05-09 19:20:13.697 +03:00 [INF] Executed DbCommand (139ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-09 19:20:13.927 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Models.Book, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 19:20:13.995 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 4376.6505ms
+2026-05-09 19:20:14.003 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:20:14.027 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 200 null application/json; charset=utf-8 4537.8462ms
+2026-05-09 19:25:35.782 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 19:25:35.926 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 19:25:36.111 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 19:25:36.117 +03:00 [INF] Hosting environment: Development
+2026-05-09 19:25:36.124 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 19:25:37.101 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 19:25:37.721 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 634.2787ms
+2026-05-09 19:25:37.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:25:37.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:25:37.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 52.9874ms
+2026-05-09 19:25:38.033 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 184.5068ms
+2026-05-09 19:25:38.192 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 19:25:38.274 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.5166ms
+2026-05-09 19:25:39.450 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:25:39.465 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 15.902ms
+2026-05-09 19:25:39.482 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:25:39.552 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.6583ms
+2026-05-09 19:25:43.086 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-09 19:25:43.115 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:25:43.197 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:25:47.240 +03:00 [INF] Executed DbCommand (141ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-09 19:25:47.540 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 19:25:47.590 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 4374.4987ms
+2026-05-09 19:25:47.596 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:25:47.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 200 null application/json; charset=utf-8 4528.0428ms
+2026-05-09 19:26:45.668 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books/4 - null null
+2026-05-09 19:26:45.699 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetById (BooKStore)'
+2026-05-09 19:26:45.736 +03:00 [INF] Route matched with {action = "GetById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:26:46.344 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2026-05-09 19:26:46.361 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 19:26:46.368 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetById (BooKStore) in 625.8788ms
+2026-05-09 19:26:46.375 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetById (BooKStore)'
+2026-05-09 19:26:46.378 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books/4 - 200 null application/json; charset=utf-8 712.1556ms
+2026-05-09 19:29:07.741 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 19:29:07.879 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 147.0153ms
+2026-05-09 19:29:07.993 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:29:08.005 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:29:08.024 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 30.556ms
+2026-05-09 19:29:08.118 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 113.4287ms
+2026-05-09 19:29:08.212 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 19:29:08.285 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.0805ms
+2026-05-09 19:29:09.654 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:29:09.674 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 19.8841ms
+2026-05-09 19:29:10.501 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:29:10.533 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.1315ms
+2026-05-09 19:29:25.151 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 19:29:25.305 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 19:29:25.576 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 19:29:25.596 +03:00 [INF] Hosting environment: Development
+2026-05-09 19:29:25.600 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 19:29:26.408 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 19:29:26.992 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 604.3989ms
+2026-05-09 19:29:27.169 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:29:27.195 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 26.4544ms
+2026-05-09 19:29:27.319 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:29:27.330 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 14.8195ms
+2026-05-09 19:29:27.368 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:29:27.582 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 215.0567ms
+2026-05-09 19:29:27.968 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 19:29:28.108 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 178.0333ms
+2026-05-09 19:29:32.976 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:29:33.044 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.709ms
+2026-05-09 19:29:48.617 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Books/4 - application/json 87
+2026-05-09 19:29:48.662 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Update (BooKStore)'
+2026-05-09 19:29:48.808 +03:00 [INF] Route matched with {action = "Update", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, BooKStore.Dtos.Book.UpdateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:29:54.063 +03:00 [INF] Executed DbCommand (369ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2026-05-09 19:29:54.758 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Books] SET [AuthorId] = @p0, [Title] = @p1, [publishedDate] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2026-05-09 19:29:54.834 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Models.Book, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 19:29:54.883 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Update (BooKStore) in 6053.3478ms
+2026-05-09 19:29:54.890 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Update (BooKStore)'
+2026-05-09 19:29:54.911 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Books/4 - 200 null application/json; charset=utf-8 6294.366ms
+2026-05-09 19:30:56.975 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 19:30:57.166 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 19:30:57.368 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 19:30:57.373 +03:00 [INF] Hosting environment: Development
+2026-05-09 19:30:57.375 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 19:30:58.169 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 19:30:58.910 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 754.7694ms
+2026-05-09 19:30:59.036 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:30:59.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:30:59.062 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 25.8218ms
+2026-05-09 19:30:59.227 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 176.1443ms
+2026-05-09 19:30:59.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 19:30:59.430 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.3361ms
+2026-05-09 19:31:01.015 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:31:01.029 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 13.7983ms
+2026-05-09 19:31:01.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:31:01.892 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.6629ms
+2026-05-09 19:31:06.103 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-09 19:31:06.128 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:31:06.209 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:31:10.429 +03:00 [INF] Executed DbCommand (137ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-09 19:31:10.710 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 19:31:10.768 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 4540.0414ms
+2026-05-09 19:31:10.774 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:31:10.795 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 200 null application/json; charset=utf-8 4692.9212ms
+2026-05-09 19:31:34.163 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Books/4 - application/json 87
+2026-05-09 19:31:34.173 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Update (BooKStore)'
+2026-05-09 19:31:34.207 +03:00 [INF] Route matched with {action = "Update", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, BooKStore.Dtos.Book.UpdateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:31:34.860 +03:00 [INF] Executed DbCommand (95ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2026-05-09 19:31:35.183 +03:00 [INF] Executed DbCommand (60ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Books] SET [AuthorId] = @p0, [Title] = @p1, [publishedDate] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2026-05-09 19:31:35.218 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 19:31:35.225 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Update (BooKStore) in 1011.2466ms
+2026-05-09 19:31:35.231 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Update (BooKStore)'
+2026-05-09 19:31:35.236 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Books/4 - 200 null application/json; charset=utf-8 1073.1017ms
+2026-05-09 19:32:02.071 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7171/api/Books - application/json 87
+2026-05-09 19:32:02.078 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-09 19:32:02.090 +03:00 [INF] Route matched with {action = "Add", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(BooKStore.Dtos.Book.CreateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:32:02.281 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title], [publishedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2026-05-09 19:32:02.401 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BooKStore.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors_AuthorId". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:bb01efa8-7108-4a10-8fe3-d22071d9ec37
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors_AuthorId". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:bb01efa8-7108-4a10-8fe3-d22071d9ec37
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-05-09 19:32:02.815 +03:00 [ERR] Error in CompleteAsync
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors_AuthorId". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:bb01efa8-7108-4a10-8fe3-d22071d9ec37
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BooKStore.Repositories.UnitOfWork.CompleteAsync() in D:\dotNetProjects\BooKStore\BooKStore\Repositories\UnitOfWork.cs:line 24
+2026-05-09 19:32:03.077 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Add (BooKStore) in 982.1898ms
+2026-05-09 19:32:03.086 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-09 19:32:03.101 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Books_Authors_AuthorId". The conflict occurred in database "BookStore", table "dbo.Authors", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:bb01efa8-7108-4a10-8fe3-d22071d9ec37
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at BooKStore.Repositories.UnitOfWork.CompleteAsync() in D:\dotNetProjects\BooKStore\BooKStore\Repositories\UnitOfWork.cs:line 24
+   at BooKStore.Services.BookService.AddBook(CreateBookDto dto) in D:\dotNetProjects\BooKStore\BooKStore\Services\BookService.cs:line 58
+   at BooKStore.Controllers.BooksController.Add(CreateBookDto dto) in D:\dotNetProjects\BooKStore\BooKStore\Controllers\BooksController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-09 19:32:03.163 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7171/api/Books - 500 null text/plain; charset=utf-8 1092.7891ms
+2026-05-09 19:32:05.948 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-09 19:32:05.956 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:32:05.961 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:32:05.978 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-09 19:32:06.022 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 19:32:06.026 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 61.2439ms
+2026-05-09 19:32:06.030 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:32:06.035 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 200 null application/json; charset=utf-8 87.5805ms
+2026-05-09 19:32:08.972 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-09 19:32:08.980 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:32:08.984 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:32:08.997 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-09 19:32:09.005 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 19:32:09.009 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 20.6322ms
+2026-05-09 19:32:09.013 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:32:09.017 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 200 null application/json; charset=utf-8 44.9436ms
+2026-05-09 19:33:26.344 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7171/api/Books - application/json 87
+2026-05-09 19:33:26.365 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-09 19:33:26.370 +03:00 [INF] Route matched with {action = "Add", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(BooKStore.Dtos.Book.CreateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:33:26.438 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title], [publishedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2026-05-09 19:33:26.518 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 19:33:26.611 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Add (BooKStore) in 234.5971ms
+2026-05-09 19:33:26.616 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-09 19:33:26.620 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7171/api/Books - 201 null application/json; charset=utf-8 338.9047ms
+2026-05-09 19:33:51.194 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7171/api/Books - application/json 87
+2026-05-09 19:33:51.229 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-09 19:33:51.233 +03:00 [INF] Route matched with {action = "Add", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(BooKStore.Dtos.Book.CreateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:33:51.264 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title], [publishedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2026-05-09 19:33:51.275 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 19:33:51.283 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Add (BooKStore) in 44.1919ms
+2026-05-09 19:33:51.293 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-09 19:33:51.297 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7171/api/Books - 201 null application/json; charset=utf-8 103.5843ms
+2026-05-09 19:33:56.754 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-09 19:33:56.764 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:33:56.768 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:33:56.786 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-09 19:33:56.812 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 19:33:56.817 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 43.7108ms
+2026-05-09 19:33:56.822 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:33:56.826 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 200 null application/json; charset=utf-8 73.5935ms
+2026-05-09 19:34:51.538 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 19:34:51.689 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 19:34:51.848 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 19:34:51.855 +03:00 [INF] Hosting environment: Development
+2026-05-09 19:34:51.860 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 19:34:52.987 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 19:34:53.628 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 655.7062ms
+2026-05-09 19:34:53.746 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:34:53.770 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 25.3135ms
+2026-05-09 19:34:53.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:34:53.992 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 144.8943ms
+2026-05-09 19:34:54.138 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:34:54.154 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 16.4215ms
+2026-05-09 19:34:54.275 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 19:34:54.312 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.3052ms
+2026-05-09 19:34:56.857 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:34:56.894 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.7866ms
+2026-05-09 19:34:56.947 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-09 19:34:56.972 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:34:57.074 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:35:01.325 +03:00 [INF] Executed DbCommand (142ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-09 19:35:01.589 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 19:35:01.641 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 4550.723ms
+2026-05-09 19:35:01.647 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:35:01.668 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 200 null application/json; charset=utf-8 4721.3642ms
+2026-05-09 19:35:11.342 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7171/api/Books/7 - null null
+2026-05-09 19:35:11.350 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Delete (BooKStore)'
+2026-05-09 19:35:11.388 +03:00 [INF] Route matched with {action = "Delete", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:35:11.983 +03:00 [INF] Executed DbCommand (88ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2026-05-09 19:35:12.292 +03:00 [INF] Executed DbCommand (35ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Books]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-05-09 19:35:12.339 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 19:35:12.348 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Delete (BooKStore) in 953.1139ms
+2026-05-09 19:35:12.355 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Delete (BooKStore)'
+2026-05-09 19:35:12.359 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7171/api/Books/7 - 200 null application/json; charset=utf-8 1017.8084ms
+2026-05-09 19:35:20.431 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-09 19:35:20.439 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:35:20.442 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:35:20.492 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-09 19:35:20.500 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 19:35:20.504 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 57.1289ms
+2026-05-09 19:35:20.509 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-09 19:35:20.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 200 null application/json; charset=utf-8 83.0115ms
+2026-05-09 19:35:27.401 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books/6 - null null
+2026-05-09 19:35:27.415 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetById (BooKStore)'
+2026-05-09 19:35:27.428 +03:00 [INF] Route matched with {action = "GetById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 19:35:27.454 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2026-05-09 19:35:27.465 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 19:35:27.469 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetById (BooKStore) in 34.4663ms
+2026-05-09 19:35:27.474 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetById (BooKStore)'
+2026-05-09 19:35:27.479 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books/6 - 200 null application/json; charset=utf-8 78.1891ms
+2026-05-09 19:51:00.697 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 19:51:00.743 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 19:51:00.791 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 19:51:00.795 +03:00 [INF] Hosting environment: Development
+2026-05-09 19:51:00.797 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 19:51:01.741 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 19:51:02.254 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 520.048ms
+2026-05-09 19:51:02.353 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:51:02.371 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 18.7272ms
+2026-05-09 19:51:03.125 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:51:03.276 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 151.2478ms
+2026-05-09 19:51:03.520 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 19:51:03.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.1144ms
+2026-05-09 19:51:04.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 19:51:04.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 19:51:04.407 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 24.046ms
+2026-05-09 19:51:04.416 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.8725ms
+2026-05-09 20:03:03.139 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 20:03:03.185 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 20:03:03.263 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 20:03:03.266 +03:00 [INF] Hosting environment: Development
+2026-05-09 20:03:03.271 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 20:03:03.737 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 20:03:04.139 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 414.3767ms
+2026-05-09 20:03:04.229 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:03:04.252 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 23.7072ms
+2026-05-09 20:03:04.322 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:03:04.423 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.5137ms
+2026-05-09 20:03:04.620 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 20:03:04.661 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - BooKStore.Controllers.AuthorController.GetAll (BooKStore). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-09 20:03:04.694 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 74.2194ms
+2026-05-09 20:03:05.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:03:05.280 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 11.7624ms
+2026-05-09 20:03:07.507 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:03:07.589 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.4754ms
+2026-05-09 20:03:17.231 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 20:03:17.279 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 20:03:17.340 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 20:03:17.345 +03:00 [INF] Hosting environment: Development
+2026-05-09 20:03:17.356 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 20:03:18.065 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 20:03:18.395 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 345.4955ms
+2026-05-09 20:03:18.434 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:03:18.454 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 19.528ms
+2026-05-09 20:03:18.518 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:03:18.606 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 88.3342ms
+2026-05-09 20:03:18.702 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 20:03:18.737 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - BooKStore.Controllers.AuthorController.GetAll (BooKStore). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-09 20:03:18.756 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 55.1121ms
+2026-05-09 20:03:21.059 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:03:21.059 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:03:21.095 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 36.7541ms
+2026-05-09 20:03:21.114 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.7972ms
+2026-05-09 20:03:50.100 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 20:03:50.233 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 20:03:50.341 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 20:03:50.346 +03:00 [INF] Hosting environment: Development
+2026-05-09 20:03:50.351 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 20:03:50.472 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 20:03:50.911 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 452.3626ms
+2026-05-09 20:03:51.057 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:03:51.059 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:03:51.075 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 18.0898ms
+2026-05-09 20:03:51.145 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.7356ms
+2026-05-09 20:03:51.430 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 20:03:51.458 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.893ms
+2026-05-09 20:03:51.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:03:51.544 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.9348ms
+2026-05-09 20:03:53.318 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:03:53.321 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:03:53.331 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 13.6499ms
+2026-05-09 20:03:53.363 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.3603ms
+2026-05-09 20:04:30.206 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 20:04:30.249 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 20:04:30.318 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 20:04:30.322 +03:00 [INF] Hosting environment: Development
+2026-05-09 20:04:30.326 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 20:04:30.638 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 20:04:31.140 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 512.7362ms
+2026-05-09 20:04:31.178 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:04:31.197 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 18.2913ms
+2026-05-09 20:04:31.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:04:31.361 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.6442ms
+2026-05-09 20:04:31.458 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 20:04:31.489 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 32.2789ms
+2026-05-09 20:04:32.894 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:04:32.904 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 11.2291ms
+2026-05-09 20:04:34.025 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:04:34.082 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.7036ms
+2026-05-09 20:04:35.426 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors - null null
+2026-05-09 20:04:35.457 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 20:04:35.532 +03:00 [INF] Route matched with {action = "GetAll", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-09 20:04:42.725 +03:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+2026-05-09 20:04:43.114 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetAll (BooKStore) in 7568.4699ms
+2026-05-09 20:04:43.123 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 20:04:43.137 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[BooKStore.Models.Author, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[BooKStore.Dtos.Author.AuthorDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Author -> AuthorDto
+BooKStore.Models.Author -> BooKStore.Dtos.Author.AuthorDto
+   at lambda_method39(Closure, Author, AuthorDto, ResolutionContext)
+   at lambda_method38(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method38(Closure, Object, List`1, ResolutionContext)
+   at BooKStore.Services.AuthorService.GetAllAuthors() in D:\dotNetProjects\BooKStore\BooKStore\Services\AuthorService.cs:line 26
+   at BooKStore.Controllers.AuthorsController.GetAll() in D:\dotNetProjects\BooKStore\BooKStore\Controllers\AuthorsController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-09 20:04:43.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors - 500 null text/plain; charset=utf-8 7877.2704ms
+2026-05-09 20:09:25.672 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 20:09:25.838 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 20:09:26.076 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 20:09:26.080 +03:00 [INF] Hosting environment: Development
+2026-05-09 20:09:26.083 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 20:09:26.341 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 20:09:26.863 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 533.192ms
+2026-05-09 20:09:26.972 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:09:27.039 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:09:27.044 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 72.6166ms
+2026-05-09 20:09:27.152 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 113.4008ms
+2026-05-09 20:09:27.283 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 20:09:27.325 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.0261ms
+2026-05-09 20:09:30.032 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:09:30.032 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:09:30.042 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 10.7738ms
+2026-05-09 20:09:30.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.1933ms
+2026-05-09 20:09:30.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors - null null
+2026-05-09 20:09:30.632 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 20:09:30.697 +03:00 [INF] Route matched with {action = "GetAll", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-09 20:09:34.535 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+2026-05-09 20:09:34.891 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetAll (BooKStore) in 4178.8519ms
+2026-05-09 20:09:34.900 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 20:09:35.027 +03:00 [ERR] Unhandled exception occurred
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+List`1 -> List`1
+System.Collections.Generic.List`1[[BooKStore.Models.Author, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.List`1[[BooKStore.Dtos.Author.AuthorDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Author -> AuthorDto
+BooKStore.Models.Author -> BooKStore.Dtos.Author.AuthorDto
+   at lambda_method39(Closure, Author, AuthorDto, ResolutionContext)
+   at lambda_method38(Closure, Object, List`1, ResolutionContext)
+   --- End of inner exception stack trace ---
+   at lambda_method38(Closure, Object, List`1, ResolutionContext)
+   at BooKStore.Services.AuthorService.GetAllAuthors() in D:\dotNetProjects\BooKStore\BooKStore\Services\AuthorService.cs:line 26
+   at BooKStore.Controllers.AuthorsController.GetAll() in D:\dotNetProjects\BooKStore\BooKStore\Controllers\AuthorsController.cs:line 22
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at BooKStore.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\dotNetProjects\BooKStore\BooKStore\Middlewares\GlobalExceptionMiddleware.cs:line 20
+2026-05-09 20:09:35.175 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors - 500 null application/json 4571.8559ms
+2026-05-09 20:12:40.651 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 20:12:40.702 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 20:12:40.745 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 20:12:40.747 +03:00 [INF] Hosting environment: Development
+2026-05-09 20:12:40.750 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 20:12:41.224 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 20:12:41.677 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 464.9501ms
+2026-05-09 20:12:41.843 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:12:41.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:12:41.866 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 23.0939ms
+2026-05-09 20:12:41.971 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 125.4635ms
+2026-05-09 20:12:42.069 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 20:12:42.095 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.7552ms
+2026-05-09 20:12:42.913 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 20:12:42.926 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 14.0905ms
+2026-05-09 20:12:44.685 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 20:12:44.750 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.3681ms
+2026-05-09 20:12:45.858 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors - null null
+2026-05-09 20:12:45.886 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 20:12:45.942 +03:00 [INF] Route matched with {action = "GetAll", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-09 20:12:49.214 +03:00 [INF] Executed DbCommand (81ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+2026-05-09 20:12:49.436 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Author.AuthorDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 20:12:49.495 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetAll (BooKStore) in 3538.8303ms
+2026-05-09 20:12:49.502 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 20:12:49.525 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors - 200 null application/json; charset=utf-8 3667.8904ms
+2026-05-09 20:13:12.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors - null null
+2026-05-09 20:13:12.732 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 20:13:12.735 +03:00 [INF] Route matched with {action = "GetAll", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-09 20:13:12.879 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+2026-05-09 20:13:12.888 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Author.AuthorDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 20:13:12.892 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetAll (BooKStore) in 151.6867ms
+2026-05-09 20:13:12.897 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 20:13:12.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors - 200 null application/json; charset=utf-8 185.4091ms
+2026-05-09 21:22:34.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books/56 - null null
+2026-05-09 21:22:35.011 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetById (BooKStore)'
+2026-05-09 21:22:35.452 +03:00 [INF] Route matched with {action = "GetById", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-09 21:22:38.536 +03:00 [INF] Executed DbCommand (801ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__p_0
+2026-05-09 21:22:38.573 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 21:22:38.620 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetById (BooKStore) in 3161.6752ms
+2026-05-09 21:22:38.625 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetById (BooKStore)'
+2026-05-09 21:22:38.630 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books/56 - 404 null application/json; charset=utf-8 3804.1592ms
+2026-05-09 21:24:24.588 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 21:24:24.711 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 21:24:24.888 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 21:24:24.891 +03:00 [INF] Hosting environment: Development
+2026-05-09 21:24:24.894 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 21:24:25.633 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 21:24:26.189 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 569.4753ms
+2026-05-09 21:24:26.437 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 21:24:26.456 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 19.3948ms
+2026-05-09 21:24:26.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 21:24:26.645 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 135.754ms
+2026-05-09 21:24:26.783 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 21:24:26.829 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.0229ms
+2026-05-09 21:24:27.490 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 21:24:27.501 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 10.8748ms
+2026-05-09 21:24:29.499 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 21:24:29.541 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.0207ms
+2026-05-09 21:24:32.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors - null null
+2026-05-09 21:24:32.139 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 21:24:32.215 +03:00 [INF] Route matched with {action = "GetAll", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-09 21:24:36.103 +03:00 [INF] Executed DbCommand (106ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+2026-05-09 21:24:36.362 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Author.AuthorDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 21:24:36.424 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetAll (BooKStore) in 4193.5125ms
+2026-05-09 21:24:36.430 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 21:24:36.449 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors - 200 null application/json; charset=utf-8 4341.6172ms
+2026-05-09 21:24:44.608 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1 - null null
+2026-05-09 21:24:44.618 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 21:24:44.647 +03:00 [INF] Route matched with {action = "GetAll", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-09 21:24:45.148 +03:00 [INF] Executed DbCommand (60ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-09 21:24:45.167 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Author.AuthorDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 21:24:45.175 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetAll (BooKStore) in 521.84ms
+2026-05-09 21:24:45.180 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetAll (BooKStore)'
+2026-05-09 21:24:45.186 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1 - 200 null application/json; charset=utf-8 579.593ms
+2026-05-09 21:41:15.864 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-09 21:41:15.988 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-09 21:41:16.153 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 21:41:16.160 +03:00 [INF] Hosting environment: Development
+2026-05-09 21:41:16.164 +03:00 [INF] Content root path: D:\dotNetProjects\BooKStore\BooKStore
+2026-05-09 21:41:16.473 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 21:41:17.043 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 581.5062ms
+2026-05-09 21:41:17.110 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 21:41:17.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 19.9208ms
+2026-05-09 21:41:17.181 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 21:41:17.186 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 21:41:17.192 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 11.6925ms
+2026-05-09 21:41:17.281 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.5914ms
+2026-05-09 21:41:17.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 21:41:17.429 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.8297ms
+2026-05-09 21:41:20.386 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 21:41:20.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.0295ms
+2026-05-09 21:55:46.757 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 21:55:46.839 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 87.637ms
+2026-05-09 21:55:47.016 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 21:55:47.018 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 21:55:47.028 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 12.1124ms
+2026-05-09 21:55:47.084 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.2124ms
+2026-05-09 21:55:47.336 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 21:55:47.374 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.3476ms
+2026-05-09 21:55:48.753 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 21:55:48.756 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 21:55:48.766 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 13.5662ms
+2026-05-09 21:55:48.815 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.0147ms
+2026-05-09 21:55:50.159 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-09 21:55:50.177 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 18.2628ms
+2026-05-09 21:55:50.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 21:55:50.267 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 21:55:50.273 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 11.5108ms
+2026-05-09 21:55:50.314 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.2231ms
+2026-05-09 21:55:50.375 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-09 21:55:50.393 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.6246ms
+2026-05-09 21:55:51.991 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-09 21:55:51.991 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-09 21:55:51.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 9.2231ms
+2026-05-09 21:55:52.026 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.0576ms

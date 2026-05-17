@@ -17,77 +17,86 @@ namespace BooKStore.Services
             _mapper = mapper;
         }
 
-        public async Task<Result<IEnumerable<Book>>> GetAllBooks()
+        public async Task<Result<IEnumerable<BookDto>>> GetAllBooks()
         {
             var books = await _unitOfWork.Books.GetAllAsync();
 
             if (!books.Any())
-                return Result<IEnumerable<Book>>.Fail("No books found");
+                return Result<IEnumerable<BookDto>>.Fail("No books found");
 
-            return Result<IEnumerable<Book>>.Ok(books, "Books retrieved successfully");
+            var booksDto = _mapper.Map<IEnumerable<BookDto>>(books);
+
+            return Result<IEnumerable<BookDto>>.Ok(booksDto, "Books retrieved successfully");
         }
 
-        public async Task<Result<Book>> GetBookById(int id)
+        public async Task<Result<BookDto>> GetBookById(int id)
         {
             var book = await _unitOfWork.Books.GetByIdAsync(id);
 
             if (book == null)
-                return Result<Book>.Fail("Book not found");
+                return Result<BookDto>.Fail("Book not found");
 
-            return Result<Book>.Ok(book);
+            var bookDto = _mapper.Map<BookDto>(book);
+
+            return Result<BookDto>.Ok(bookDto);
         }
 
-        public async Task<Result<Book>> AddBook(CreateBookDto dto)
+        public async Task<Result<BookDto>> AddBook(CreateBookDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.Title))
-                return Result<Book>.Fail("Title is required");
+                return Result<BookDto>.Fail("Title is required");
 
-            if (string.IsNullOrWhiteSpace(dto.Author))
-                return Result<Book>.Fail("Author is required");
+            if (dto.AuthorId == null)
+                return Result<BookDto>.Fail("Author is required");
 
             var book = new Book
             {
                 Title = dto.Title,
-                Author = dto.Author
+                AuthorId = dto.AuthorId
             };
             await _unitOfWork.Books.AddAsync(book);
             await _unitOfWork.CompleteAsync();
 
-            return Result<Book>.Ok(book, "Book created successfully");
+            var bookDto = _mapper.Map<BookDto>(book);
+
+            return Result<BookDto>.Ok(bookDto, "Book created successfully");
         }
 
-        public async Task<Result<Book>> UpdateBook(int id, UpdateBookDto dto)
+        public async Task<Result<BookDto>> UpdateBook(int id, UpdateBookDto dto)
         {
             var book = await _unitOfWork.Books.GetByIdAsync(id);
 
             if (book == null)
-                return Result<Book>.Fail("Book not found");
+                return Result<BookDto>.Fail("Book not found");
 
             if (string.IsNullOrWhiteSpace(dto.Title))
-                return Result<Book>.Fail("Title is required");
+                return Result<BookDto>.Fail("Title is required");
 
-            if (string.IsNullOrWhiteSpace(dto.Author))
-                return Result<Book>.Fail("Author is required");
+            if (dto.AuthorId == null)
+                return Result<BookDto>.Fail("Author is required");
 
             book.Title = dto.Title;
-            book.Author = dto.Author;
+            book.AuthorId = dto.AuthorId;
 
             _unitOfWork.Books.Update(book);
             await _unitOfWork.CompleteAsync();
 
-            return Result<Book>.Ok(book, "Book Updated successfully");
+            var bookDto = _mapper.Map<BookDto>(book);
+
+            return Result<BookDto>.Ok(bookDto, "Book Updated successfully");
         }
-        public async Task<Result<Book>> DeleteBook(int id)
+        public async Task<Result<BookDto>> DeleteBook(int id)
         {
             var book = await _unitOfWork.Books.GetByIdAsync(id);
 
             if (book == null)
-                return Result<Book>.Fail("Book not found");
+                return Result<BookDto>.Fail("Book not found");
 
             _unitOfWork.Books.Delete(book);
             await _unitOfWork.CompleteAsync();
 
-            return Result<Book>.Ok(book, "Book deleted successfully");
+            var bookDto = _mapper.Map<BookDto>(book);
+            return Result<BookDto>.Ok(bookDto, "Book deleted successfully");
         }
 
 
