@@ -46,13 +46,20 @@ namespace BooKStore.Services
             if (string.IsNullOrWhiteSpace(dto.Title))
                 return Result<BookDto>.Fail("Title is required");
 
-            if (dto.AuthorId == null)
+            if (dto.AuthorId == null || dto.AuthorId == 0)
                 return Result<BookDto>.Fail("Author is required");
+
+            var author = await _unitOfWork.Authors.GetByIdAsync(dto.AuthorId);
+            if (author == null)
+            {
+                return Result<BookDto>.Fail("Author not found");
+            }
 
             var book = new Book
             {
                 Title = dto.Title,
-                AuthorId = dto.AuthorId
+                AuthorId = dto.AuthorId,
+                publishedDate = dto.publishedDate
             };
             await _unitOfWork.Books.AddAsync(book);
             await _unitOfWork.CompleteAsync();

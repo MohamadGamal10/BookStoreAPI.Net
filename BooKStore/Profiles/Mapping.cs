@@ -12,6 +12,7 @@ namespace BooKStore.Profiles
             CreateMap<Book, BookDto>().ReverseMap();
             CreateMap<Book, CreateBookDto>().ReverseMap();
             CreateMap<Book, UpdateBookDto>().ReverseMap();
+            CreateMap<Book, BookForSpecificAuthorDto>().ReverseMap();
 
             CreateMap<Author, AuthorDto>().ReverseMap();
             CreateMap<Author, CreateAuthorDto>().ReverseMap();

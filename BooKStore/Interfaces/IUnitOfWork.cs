@@ -1,11 +1,13 @@
 ﻿using BooKStore.Models;
+using BooKStore.Repositories;
 
 namespace BooKStore.Interfaces
 {
     public interface IUnitOfWork: IDisposable
     {
         IRepository<Book> Books { get; }
-        IRepository<Author> Authors { get; }
+        IAuthorRepository Authors { get; }
+        //IRepository<Author> Authors { get; }
         Task<int> CompleteAsync();
     }
 }

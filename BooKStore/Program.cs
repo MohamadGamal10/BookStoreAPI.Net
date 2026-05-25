@@ -1,7 +1,9 @@
 
 using AutoMapper;
+using BooKStore.Data;
 using BooKStore.Interfaces;
 using BooKStore.Middlewares;
+using BooKStore.Models;
 using BooKStore.Profiles;
 using BooKStore.Repositories;
 using BooKStore.Services;
@@ -38,6 +40,12 @@ namespace BooKStore
             builder.Services.AddScoped<BookService>();
             builder.Services.AddScoped<AuthorService>();
 
+            // Identity
+            //builder.Services.AddIdentityApiEndpoints<ApplicationUser>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            builder.Services.AddIdentity<ApplicationUser>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
             // Configure Serilog
@@ -58,8 +66,13 @@ namespace BooKStore
                 app.UseSwaggerUI();
             }
 
+
+            // To make all apis Auth auto
+            //app.MapIdentityApi<ApplicationUser>();
+
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseMiddleware<GlobalExceptionMiddleware>();

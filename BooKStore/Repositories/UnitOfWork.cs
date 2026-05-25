@@ -10,13 +10,13 @@ namespace BooKStore.Repositories
     {
         private readonly ApplicationDbContext _context;
         public IRepository<Book> Books { get; private set; }
-        public IRepository<Author> Authors { get; private set; }
+        public IAuthorRepository Authors { get; private set; }
 
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
             Books = new MainRepository<Book>(_context);
-            Authors = new MainRepository<Author>(_context);
+            Authors = new AuthorRepository(_context);
         }
 
         public async Task<int> CompleteAsync()

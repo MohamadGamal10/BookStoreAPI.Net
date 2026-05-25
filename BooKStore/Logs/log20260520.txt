@@ -1,0 +1,1185 @@
+2026-05-20 09:29:32.808 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-20 09:29:32.859 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-20 09:29:32.922 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-20 09:29:32.924 +03:00 [INF] Hosting environment: Development
+2026-05-20 09:29:32.925 +03:00 [INF] Content root path: G:\Gemy\BookStoreAPI.Net\BooKStore
+2026-05-20 09:29:33.470 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger - null null
+2026-05-20 09:29:33.650 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger - 301 0 null 185.7827ms
+2026-05-20 09:29:33.657 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 09:29:33.750 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 92.8339ms
+2026-05-20 09:29:33.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/swagger-ui.css - null null
+2026-05-20 09:29:33.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/swagger-ui-bundle.js - null null
+2026-05-20 09:29:33.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/swagger-ui-standalone-preset.js - null null
+2026-05-20 09:29:33.780 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 09:29:33.796 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 09:29:33.815 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 35.6704ms
+2026-05-20 09:29:33.840 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-20 09:29:33.847 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-20 09:29:33.936 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 156.5258ms
+2026-05-20 09:29:33.935 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/swagger-ui.css - 200 152034 text/css 155.5238ms
+2026-05-20 09:29:33.992 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-20 09:29:33.997 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 201.0746ms
+2026-05-20 09:29:33.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 219.2557ms
+2026-05-20 09:29:34.261 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 09:29:34.296 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 35.0238ms
+2026-05-20 09:29:34.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/favicon-32x32.png - null null
+2026-05-20 09:29:34.337 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-20 09:29:34.338 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/favicon-32x32.png - 200 628 image/png 36.347ms
+2026-05-20 09:29:34.484 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/swagger-ui-standalone-preset.js - null null
+2026-05-20 09:29:34.484 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 09:29:34.484 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/swagger-ui-bundle.js - null null
+2026-05-20 09:29:34.500 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-20 09:29:34.501 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 17.4215ms
+2026-05-20 09:29:34.521 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.0623ms
+2026-05-20 09:29:34.525 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-20 09:29:34.526 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 42.4958ms
+2026-05-20 09:29:34.537 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 09:29:34.542 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 5.1163ms
+2026-05-20 09:29:39.685 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 09:29:39.700 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 09:29:39.730 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 09:29:43.094 +03:00 [INF] Executed DbCommand (130ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 09:29:43.247 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 09:29:43.267 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 3528.3942ms
+2026-05-20 09:29:43.269 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 09:29:43.277 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 3592.8247ms
+2026-05-20 09:30:03.671 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - application/json 71
+2026-05-20 09:30:03.687 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 09:30:03.694 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 09:30:03.749 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 09:30:03.777 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 09:30:19.894 +03:00 [ERR] Error updating book ID 3 for Author ID 1
+System.InvalidOperationException: The instance of entity type 'Book' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at BooKStore.Repositories.AuthorRepository.updateBookWithBookIdAndAuthorIdAsync(Book book) in G:\Gemy\BookStoreAPI.Net\BooKStore\Repositories\AuthorRepository.cs:line 62
+2026-05-20 09:30:42.877 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 09:30:46.476 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 42778.2003ms
+2026-05-20 09:30:46.478 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 09:30:53.646 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - 200 null application/json; charset=utf-8 49974.6634ms
+2026-05-20 09:31:01.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 09:31:01.532 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 09:31:01.534 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 09:31:01.602 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 09:31:01.606 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 09:31:01.609 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 72.313ms
+2026-05-20 09:31:01.611 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 09:31:01.612 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 86.8053ms
+2026-05-20 09:34:30.457 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-20 09:34:30.498 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-20 09:34:30.546 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-20 09:34:30.549 +03:00 [INF] Hosting environment: Development
+2026-05-20 09:34:30.552 +03:00 [INF] Content root path: G:\Gemy\BookStoreAPI.Net\BooKStore
+2026-05-20 09:34:30.842 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 09:34:31.061 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 221.5301ms
+2026-05-20 09:34:31.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 09:34:31.106 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 09:34:31.119 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 14.8849ms
+2026-05-20 09:34:31.156 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.3955ms
+2026-05-20 09:34:31.393 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 09:34:31.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.6541ms
+2026-05-20 09:34:31.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 09:34:31.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 09:34:31.871 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 12.4882ms
+2026-05-20 09:34:31.885 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.3295ms
+2026-05-20 09:34:38.475 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 09:34:38.489 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 09:34:38.516 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 09:34:40.090 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 09:34:40.213 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 09:34:40.232 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 1709.1277ms
+2026-05-20 09:34:40.236 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 09:34:40.244 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 1768.8766ms
+2026-05-20 10:06:39.589 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:06:39.600 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:06:39.602 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:06:39.644 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:06:39.650 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:06:39.652 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 47.2281ms
+2026-05-20 10:06:39.654 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:06:39.655 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 66.3928ms
+2026-05-20 10:19:48.028 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:19:48.038 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:19:48.039 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:19:48.111 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:19:48.115 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:19:48.116 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 74.924ms
+2026-05-20 10:19:48.118 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:19:48.119 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 91.3864ms
+2026-05-20 10:20:59.905 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:20:59.926 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:20:59.927 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:20:59.936 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:20:59.940 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:20:59.942 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 12.4694ms
+2026-05-20 10:20:59.943 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:20:59.951 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 58.095ms
+2026-05-20 10:21:04.930 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - application/json 71
+2026-05-20 10:21:04.951 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 10:21:04.958 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:21:04.994 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 10:21:05.014 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 10:21:08.227 +03:00 [ERR] Error updating book ID 3 for Author ID 1
+System.InvalidOperationException: The instance of entity type 'Book' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at BooKStore.Repositories.AuthorRepository.updateBookWithBookIdAndAuthorId(Book book) in G:\Gemy\BookStoreAPI.Net\BooKStore\Repositories\AuthorRepository.cs:line 62
+2026-05-20 10:21:08.293 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 10:21:08.298 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 3334.5457ms
+2026-05-20 10:21:08.301 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 10:21:08.302 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - 200 null application/json; charset=utf-8 3371.9544ms
+2026-05-20 10:21:18.590 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - application/json 71
+2026-05-20 10:21:18.595 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 10:21:18.598 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:21:18.609 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 10:21:18.616 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 10:21:18.666 +03:00 [ERR] Error updating book ID 3 for Author ID 1
+System.InvalidOperationException: The instance of entity type 'Book' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at BooKStore.Repositories.AuthorRepository.updateBookWithBookIdAndAuthorId(Book book) in G:\Gemy\BookStoreAPI.Net\BooKStore\Repositories\AuthorRepository.cs:line 62
+2026-05-20 10:21:18.674 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 10:21:18.676 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 73.153ms
+2026-05-20 10:21:18.677 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 10:21:18.679 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - 200 null application/json; charset=utf-8 89.133ms
+2026-05-20 10:21:24.143 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:21:24.151 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:21:24.152 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:21:24.160 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:21:24.164 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:21:24.166 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 10.3577ms
+2026-05-20 10:21:24.168 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:21:24.169 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 26.7146ms
+2026-05-20 10:22:12.451 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:22:12.463 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:22:12.464 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:22:12.471 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:22:12.475 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:22:12.477 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 9.5204ms
+2026-05-20 10:22:12.486 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:22:12.488 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 36.7259ms
+2026-05-20 10:24:05.274 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:24:05.295 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:05.297 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:24:05.302 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:24:05.306 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:24:05.308 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 8.3116ms
+2026-05-20 10:24:05.309 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:05.311 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 36.4904ms
+2026-05-20 10:24:23.969 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:24:23.974 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:23.976 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:24:23.988 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:24:23.991 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:24:23.993 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 8.9399ms
+2026-05-20 10:24:23.995 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:23.999 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 31.1247ms
+2026-05-20 10:24:26.860 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:24:26.869 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:26.871 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:24:26.878 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:24:26.884 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:24:26.887 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 12.8784ms
+2026-05-20 10:24:26.888 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:26.889 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 29.1707ms
+2026-05-20 10:24:28.863 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:24:28.868 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:28.869 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:24:28.878 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:24:28.884 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:24:28.885 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 12.0957ms
+2026-05-20 10:24:28.887 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:28.888 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 24.7147ms
+2026-05-20 10:24:38.758 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:24:38.761 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:38.762 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:24:38.768 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:24:38.773 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:24:38.775 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 9.5852ms
+2026-05-20 10:24:38.777 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:38.781 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 23.0606ms
+2026-05-20 10:24:51.808 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:24:51.812 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:51.815 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:24:51.824 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:24:51.827 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:24:51.828 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 9.3396ms
+2026-05-20 10:24:51.831 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:24:51.833 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 25.2018ms
+2026-05-20 10:25:21.269 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:25:21.283 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:21.284 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:25:21.289 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:25:21.293 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:25:21.295 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 9.35ms
+2026-05-20 10:25:21.300 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:21.301 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 31.9294ms
+2026-05-20 10:25:22.315 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:25:22.334 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:22.339 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:25:22.350 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:25:22.354 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:25:22.356 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 12.2384ms
+2026-05-20 10:25:22.358 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:22.359 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 45.0357ms
+2026-05-20 10:25:25.687 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/2/books - null null
+2026-05-20 10:25:25.692 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:25.694 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:25:25.704 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:25:25.716 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:25:25.719 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 18.587ms
+2026-05-20 10:25:25.720 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:25.722 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/2/books - 404 null application/json; charset=utf-8 34.7831ms
+2026-05-20 10:25:31.935 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/3/books - null null
+2026-05-20 10:25:31.953 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:31.955 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:25:31.961 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:25:31.967 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:25:31.969 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 10.5129ms
+2026-05-20 10:25:31.970 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:31.971 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/3/books - 404 null application/json; charset=utf-8 36.4171ms
+2026-05-20 10:25:35.747 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/4/books - null null
+2026-05-20 10:25:35.753 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:35.754 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:25:35.764 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:25:35.769 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:25:35.770 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 13.0819ms
+2026-05-20 10:25:35.772 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:35.773 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/4/books - 404 null application/json; charset=utf-8 25.7103ms
+2026-05-20 10:25:40.692 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:25:40.697 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:40.700 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:25:40.706 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:25:40.710 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:25:40.711 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 7.9139ms
+2026-05-20 10:25:40.713 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:40.716 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 23.9942ms
+2026-05-20 10:25:56.208 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:25:56.219 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:56.220 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:25:56.226 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:25:56.232 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:25:56.233 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 11.141ms
+2026-05-20 10:25:56.235 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:25:56.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 28.4223ms
+2026-05-20 10:26:05.618 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - application/json 70
+2026-05-20 10:26:05.622 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 10:26:05.626 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:26:05.636 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 10:26:05.642 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 10:26:05.692 +03:00 [ERR] Error updating book ID 3 for Author ID 1
+System.InvalidOperationException: The instance of entity type 'Book' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Update(TEntity entity)
+   at BooKStore.Repositories.AuthorRepository.updateBookWithBookIdAndAuthorId(Book book) in G:\Gemy\BookStoreAPI.Net\BooKStore\Repositories\AuthorRepository.cs:line 62
+2026-05-20 10:26:05.707 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 10:26:05.709 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 79.7443ms
+2026-05-20 10:26:05.710 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 10:26:05.712 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - 200 null application/json; charset=utf-8 93.5977ms
+2026-05-20 10:26:14.716 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:26:14.734 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:26:14.741 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:26:14.746 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:26:14.752 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:26:14.753 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 10.451ms
+2026-05-20 10:26:14.755 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:26:14.756 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 40.2598ms
+2026-05-20 10:27:39.967 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:27:39.975 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:27:39.976 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:27:39.984 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:27:39.996 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:27:39.998 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 19.5809ms
+2026-05-20 10:27:39.999 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:27:40.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 33.6376ms
+2026-05-20 10:28:08.423 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:28:08.429 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:28:08.432 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:28:08.443 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:28:08.458 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:28:08.461 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 25.8194ms
+2026-05-20 10:28:08.462 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:28:08.465 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 41.7861ms
+2026-05-20 10:28:25.397 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/2/books - null null
+2026-05-20 10:28:25.403 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:28:25.405 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:28:25.417 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:28:25.421 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:28:25.423 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 12.2362ms
+2026-05-20 10:28:25.425 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:28:25.426 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/2/books - 404 null application/json; charset=utf-8 29.5542ms
+2026-05-20 10:28:30.397 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:28:30.404 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:28:30.406 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:28:30.412 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:28:30.418 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:28:30.420 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 11.2043ms
+2026-05-20 10:28:30.422 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:28:30.423 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 26.7135ms
+2026-05-20 10:29:59.959 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:29:59.990 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:29:59.992 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:29:59.999 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:30:00.004 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:30:00.006 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 11.3956ms
+2026-05-20 10:30:00.008 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:30:00.009 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 50.1672ms
+2026-05-20 10:31:22.291 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:31:22.305 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:31:22.307 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:31:22.314 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:31:22.353 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:31:22.354 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 45.2889ms
+2026-05-20 10:31:22.356 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:31:22.357 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 65.6061ms
+2026-05-20 10:31:56.116 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:31:56.123 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:31:56.126 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:31:56.134 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:31:56.144 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:31:56.145 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 17.2787ms
+2026-05-20 10:31:56.148 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:31:56.150 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 34.3508ms
+2026-05-20 10:32:39.626 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:32:39.633 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:32:39.635 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:32:39.643 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:32:39.646 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:32:39.649 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 10.0578ms
+2026-05-20 10:32:39.656 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:32:39.658 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 32.5484ms
+2026-05-20 10:34:05.379 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:34:05.382 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:34:05.384 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:34:05.392 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:34:05.405 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:34:05.407 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 17.9844ms
+2026-05-20 10:34:05.408 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:34:05.409 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 30.1269ms
+2026-05-20 10:34:14.150 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:34:14.176 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:34:14.177 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:34:14.186 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:34:14.200 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:34:14.204 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 20.7466ms
+2026-05-20 10:34:14.205 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:34:14.207 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 57.0598ms
+2026-05-20 10:35:20.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:35:20.760 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:35:20.762 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:35:20.768 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:35:20.778 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:35:20.781 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 16.163ms
+2026-05-20 10:35:20.782 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:35:20.785 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 36.555ms
+2026-05-20 10:36:21.989 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 10:36:21.998 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:36:22.000 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 10:36:22.005 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 10:36:22.009 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 10:36:22.012 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 9.355ms
+2026-05-20 10:36:22.022 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 10:36:22.024 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 35.0751ms
+2026-05-20 11:01:58.393 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 11:01:58.422 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 28.8341ms
+2026-05-20 11:01:58.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:01:58.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:01:58.465 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 11.8913ms
+2026-05-20 11:01:58.477 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.2188ms
+2026-05-20 11:01:58.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:01:58.497 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 5.9352ms
+2026-05-20 11:01:58.615 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 11:01:58.632 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.9597ms
+2026-05-20 11:01:58.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:01:58.873 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.7509ms
+2026-05-20 11:05:05.011 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-20 11:05:05.050 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-20 11:05:05.122 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-20 11:05:05.264 +03:00 [INF] Hosting environment: Development
+2026-05-20 11:05:05.265 +03:00 [INF] Content root path: G:\Gemy\BookStoreAPI.Net\BooKStore
+2026-05-20 11:05:05.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 11:05:05.526 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 195.9127ms
+2026-05-20 11:05:05.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:05:05.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:05:05.571 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 10.1273ms
+2026-05-20 11:05:05.611 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.7324ms
+2026-05-20 11:05:05.740 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 11:05:05.761 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.9259ms
+2026-05-20 11:05:05.981 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:05:05.985 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 4.3875ms
+2026-05-20 11:05:06.932 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:05:06.954 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.9959ms
+2026-05-20 11:05:11.100 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 11:05:11.112 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:05:11.139 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:05:13.717 +03:00 [INF] Executed DbCommand (111ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 11:05:13.832 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 11:05:13.849 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 2702.5999ms
+2026-05-20 11:05:13.852 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:05:13.860 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 2760.6898ms
+2026-05-20 11:05:34.963 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - application/json 70
+2026-05-20 11:05:34.972 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:05:34.978 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:05:35.025 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 11:05:35.043 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:05:35.169 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Books] SET [AuthorId] = @p0, [Title] = @p1, [publishedDate] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2026-05-20 11:05:35.187 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:05:35.192 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 209.8847ms
+2026-05-20 11:05:35.194 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:05:35.195 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - 200 null application/json; charset=utf-8 232.0244ms
+2026-05-20 11:06:04.153 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - application/json 70
+2026-05-20 11:06:04.157 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:06:04.158 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:06:06.440 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 11:06:06.888 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:07:45.480 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Books] SET [AuthorId] = @p0, [Title] = @p1, [publishedDate] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2026-05-20 11:07:45.488 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:07:45.492 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 101331.4875ms
+2026-05-20 11:07:45.494 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:07:45.496 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - 200 null application/json; charset=utf-8 101342.4848ms
+2026-05-20 11:07:46.523 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 11:07:46.642 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 116.8629ms
+2026-05-20 11:07:46.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:07:46.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:07:46.720 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 11.9036ms
+2026-05-20 11:07:46.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.2178ms
+2026-05-20 11:07:46.736 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:07:46.741 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 7.7816ms
+2026-05-20 11:07:46.742 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:07:46.756 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.5754ms
+2026-05-20 11:07:46.831 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 11:07:46.854 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.0819ms
+2026-05-20 11:07:52.264 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 11:07:52.272 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:07:52.278 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:07:52.290 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 11:07:52.294 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 11:07:52.297 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 14.9048ms
+2026-05-20 11:07:52.299 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:07:52.302 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 38.4504ms
+2026-05-20 11:08:04.346 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - application/json 70
+2026-05-20 11:08:04.359 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:08:04.365 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:08:06.829 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 11:08:07.510 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:08:14.630 +03:00 [INF] Executed DbCommand (37ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Books] SET [AuthorId] = @p0, [Title] = @p1, [publishedDate] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2026-05-20 11:08:18.585 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:08:18.588 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 14213.2579ms
+2026-05-20 11:08:18.589 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:08:18.591 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - 200 null application/json; charset=utf-8 14244.6668ms
+2026-05-20 11:08:24.915 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 11:08:24.931 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:08:24.936 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:08:24.946 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 11:08:24.952 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 11:08:24.954 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 12.9974ms
+2026-05-20 11:08:24.955 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:08:24.957 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 42.2912ms
+2026-05-20 11:08:32.403 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - application/json 71
+2026-05-20 11:08:32.409 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:08:32.411 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:08:34.004 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 11:08:34.018 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:08:34.025 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Books] SET [AuthorId] = @p0, [Title] = @p1, [publishedDate] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2026-05-20 11:08:34.029 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:08:34.036 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 1620.8194ms
+2026-05-20 11:08:34.051 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:08:34.053 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - 200 null application/json; charset=utf-8 1650.3855ms
+2026-05-20 11:08:37.449 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 11:08:37.455 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:08:37.458 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:08:37.465 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 11:08:37.471 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 11:08:37.475 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 13.5768ms
+2026-05-20 11:08:37.478 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:08:37.482 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 33.0984ms
+2026-05-20 11:44:52.985 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 11:44:52.997 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 12.5045ms
+2026-05-20 11:44:53.024 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:44:53.024 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:44:53.030 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 4.6539ms
+2026-05-20 11:44:53.053 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:44:53.065 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 12.2427ms
+2026-05-20 11:44:53.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.0894ms
+2026-05-20 11:44:53.100 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:44:53.114 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.7208ms
+2026-05-20 11:44:53.182 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 11:44:53.200 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.2993ms
+2026-05-20 11:45:29.101 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 11:45:29.109 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 8.9516ms
+2026-05-20 11:45:29.142 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:45:29.148 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:45:29.148 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 5.9292ms
+2026-05-20 11:45:29.163 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.8048ms
+2026-05-20 11:45:29.264 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:45:29.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 11:45:29.275 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 10.1189ms
+2026-05-20 11:45:29.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:45:29.291 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.1938ms
+2026-05-20 11:45:29.309 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.2703ms
+2026-05-20 11:47:27.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 11:47:27.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 8.5005ms
+2026-05-20 11:47:27.525 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:47:27.532 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:47:27.542 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 16.8323ms
+2026-05-20 11:47:27.550 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.0405ms
+2026-05-20 11:47:27.561 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:47:27.567 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 6.082ms
+2026-05-20 11:47:27.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 11:47:27.645 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.6237ms
+2026-05-20 11:47:27.968 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:47:27.978 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.8399ms
+2026-05-20 11:47:32.839 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 11:47:32.871 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:47:32.874 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:47:32.895 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 11:47:32.900 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 11:47:32.902 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 26.0004ms
+2026-05-20 11:47:32.904 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:47:32.907 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 67.4736ms
+2026-05-20 11:47:49.186 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - application/json 70
+2026-05-20 11:47:49.210 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:47:49.211 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:47:52.826 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 11:47:52.833 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:47:52.845 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Books] SET [AuthorId] = @p0, [Title] = @p1, [publishedDate] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2026-05-20 11:47:52.849 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:47:52.850 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 3636.0944ms
+2026-05-20 11:47:52.851 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:47:52.852 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/3 - 200 null application/json; charset=utf-8 3666.6464ms
+2026-05-20 11:48:01.532 +03:00 [INF] Request starting HTTP/2 PUT https://localhost:7171/api/Authors/1/books/4 - application/json 70
+2026-05-20 11:48:01.538 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:48:01.541 +03:00 [INF] Route matched with {action = "upadateBookByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] upadateBookByAuthorId(Int32, Int32, BooKStore.Dtos.Book.BookForSpecificAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:48:01.550 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__bookId_0='?' (DbType = Int32), @__authorId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+WHERE [b].[Id] = @__bookId_0 AND [b].[AuthorId] = @__authorId_1
+2026-05-20 11:48:01.555 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:48:01.560 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Books] SET [AuthorId] = @p0, [Title] = @p1, [publishedDate] = @p2
+OUTPUT 1
+WHERE [Id] = @p3;
+2026-05-20 11:48:01.562 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:48:01.563 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore) in 18.2288ms
+2026-05-20 11:48:01.565 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.upadateBookByAuthorId (BooKStore)'
+2026-05-20 11:48:01.566 +03:00 [INF] Request finished HTTP/2 PUT https://localhost:7171/api/Authors/1/books/4 - 200 null application/json; charset=utf-8 34.2463ms
+2026-05-20 11:48:05.089 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 11:48:05.098 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:48:05.101 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:48:05.112 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 11:48:05.115 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 11:48:05.117 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 8.878ms
+2026-05-20 11:48:05.118 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:48:05.120 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 30.0886ms
+2026-05-20 11:49:35.028 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 11:49:35.032 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:49:35.035 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:49:35.048 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 11:49:35.052 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 11:49:35.054 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 12.2484ms
+2026-05-20 11:49:35.064 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 11:49:35.065 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 36.7534ms
+2026-05-20 11:52:39.042 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 11:52:39.078 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 37.7708ms
+2026-05-20 11:52:39.090 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:52:39.092 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:52:39.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 11.1009ms
+2026-05-20 11:52:39.114 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.3579ms
+2026-05-20 11:52:39.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 11:52:39.283 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.373ms
+2026-05-20 11:52:39.551 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 11:52:39.556 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 5.7496ms
+2026-05-20 11:52:39.864 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 11:52:39.879 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.272ms
+2026-05-20 11:53:05.502 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7171/api/Books - application/json 87
+2026-05-20 11:53:05.507 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-20 11:53:05.512 +03:00 [INF] Route matched with {action = "Add", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(BooKStore.Dtos.Book.CreateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-20 11:53:05.529 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:53:05.533 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:53:05.535 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Add (BooKStore) in 17.0389ms
+2026-05-20 11:53:05.537 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-20 11:53:05.538 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7171/api/Books - 404 null application/json; charset=utf-8 36.215ms
+2026-05-20 11:53:25.606 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7171/api/Books - application/json 87
+2026-05-20 11:53:25.609 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-20 11:53:25.610 +03:00 [INF] Route matched with {action = "Add", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(BooKStore.Dtos.Book.CreateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-20 11:53:25.616 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:53:25.623 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:53:25.625 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Add (BooKStore) in 12.6113ms
+2026-05-20 11:53:25.627 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-20 11:53:25.629 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7171/api/Books - 404 null application/json; charset=utf-8 23.7237ms
+2026-05-20 11:53:49.700 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7171/api/Authors - application/json 49
+2026-05-20 11:53:49.704 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.Add (BooKStore)'
+2026-05-20 11:53:49.711 +03:00 [INF] Route matched with {action = "Add", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(BooKStore.Dtos.Author.CreateAuthorDto) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 11:53:49.754 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Authors] ([BirthDate], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-05-20 11:53:49.777 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Author.AuthorDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:53:49.806 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.Add (BooKStore) in 90.2768ms
+2026-05-20 11:53:49.808 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.Add (BooKStore)'
+2026-05-20 11:53:49.811 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7171/api/Authors - 201 null application/json; charset=utf-8 111.0979ms
+2026-05-20 11:53:53.477 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7171/api/Books - application/json 87
+2026-05-20 11:53:53.482 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-20 11:53:53.485 +03:00 [INF] Route matched with {action = "Add", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(BooKStore.Dtos.Book.CreateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-20 11:53:53.496 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:53:53.516 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title], [publishedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2026-05-20 11:53:53.527 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:53:53.530 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Add (BooKStore) in 40.2752ms
+2026-05-20 11:53:53.532 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-20 11:53:53.533 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7171/api/Books - 201 null application/json; charset=utf-8 56.0175ms
+2026-05-20 11:54:09.663 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7171/api/Books - application/json 87
+2026-05-20 11:54:09.670 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-20 11:54:09.673 +03:00 [INF] Route matched with {action = "Add", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(BooKStore.Dtos.Book.CreateBookDto) on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-20 11:54:09.683 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+FROM [Authors] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-05-20 11:54:09.692 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books] ([AuthorId], [Title], [publishedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);
+2026-05-20 11:54:09.695 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'BooKStore.HTTP.Result`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-20 11:54:09.697 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.Add (BooKStore) in 19.1171ms
+2026-05-20 11:54:09.698 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.Add (BooKStore)'
+2026-05-20 11:54:09.699 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7171/api/Books - 201 null application/json; charset=utf-8 36.146ms
+2026-05-20 11:54:18.905 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Books - null null
+2026-05-20 11:54:18.927 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-20 11:54:18.931 +03:00 [INF] Route matched with {action = "GetAll", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller BooKStore.Controllers.BooksController (BooKStore).
+2026-05-20 11:54:18.946 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM [Books] AS [b]
+2026-05-20 11:54:18.953 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 11:54:18.954 +03:00 [INF] Executed action BooKStore.Controllers.BooksController.GetAll (BooKStore) in 19.3661ms
+2026-05-20 11:54:18.958 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.BooksController.GetAll (BooKStore)'
+2026-05-20 11:54:18.959 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Books - 200 null application/json; charset=utf-8 55.6183ms
+2026-05-20 12:09:37.261 +03:00 [INF] Now listening on: https://localhost:7171
+2026-05-20 12:09:37.305 +03:00 [INF] Now listening on: http://localhost:5081
+2026-05-20 12:09:37.350 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-20 12:09:37.351 +03:00 [INF] Hosting environment: Development
+2026-05-20 12:09:37.353 +03:00 [INF] Content root path: G:\Gemy\BookStoreAPI.Net\BooKStore
+2026-05-20 12:09:37.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 12:09:37.870 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 183.6256ms
+2026-05-20 12:09:37.891 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 12:09:37.904 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 12:09:37.908 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 16.4406ms
+2026-05-20 12:09:37.962 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.6458ms
+2026-05-20 12:09:38.084 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 12:09:38.102 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.2836ms
+2026-05-20 12:09:38.361 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 12:09:38.366 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 5.1759ms
+2026-05-20 12:09:39.279 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 12:09:39.300 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.8072ms
+2026-05-20 12:48:22.947 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/index.html - null null
+2026-05-20 12:48:22.962 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/index.html - 200 null text/html;charset=utf-8 15.9244ms
+2026-05-20 12:48:23.001 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 12:48:23.002 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 12:48:23.021 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 19.0039ms
+2026-05-20 12:48:23.028 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.7074ms
+2026-05-20 12:48:23.120 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_vs/browserLink - null null
+2026-05-20 12:48:23.121 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-20 12:48:23.133 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_framework/aspnetcore-browser-refresh.js - 200 16503 application/javascript; charset=utf-8 12.3784ms
+2026-05-20 12:48:23.140 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.2735ms
+2026-05-20 12:48:23.167 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - null null
+2026-05-20 12:48:23.186 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.5982ms
+2026-05-20 12:48:28.208 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 12:48:28.219 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 12:48:28.247 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 12:48:29.872 +03:00 [INF] Executed DbCommand (61ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 12:48:30.042 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 12:48:30.062 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 1807.1241ms
+2026-05-20 12:48:30.065 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 12:48:30.081 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 1874.7639ms
+2026-05-20 12:53:33.473 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7171/api/Authors/1/books - null null
+2026-05-20 12:53:33.479 +03:00 [INF] Executing endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 12:53:33.482 +03:00 [INF] Route matched with {action = "GetBooksByAuthorId", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetBooksByAuthorId(Int32) on controller BooKStore.Controllers.AuthorsController (BooKStore).
+2026-05-20 12:53:33.513 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[BirthDate], [t].[Name], [b].[Id], [b].[AuthorId], [b].[Title], [b].[publishedDate]
+FROM (
+    SELECT TOP(1) [a].[Id], [a].[BirthDate], [a].[Name]
+    FROM [Authors] AS [a]
+    WHERE [a].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Books] AS [b] ON [t].[Id] = [b].[AuthorId]
+ORDER BY [t].[Id]
+2026-05-20 12:53:33.519 +03:00 [INF] Executing OkObjectResult, writing value of type 'BooKStore.HTTP.Result`1[[System.Collections.Generic.IEnumerable`1[[BooKStore.Dtos.Book.BookDto, BooKStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-20 12:53:33.521 +03:00 [INF] Executed action BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore) in 36.0095ms
+2026-05-20 12:53:33.523 +03:00 [INF] Executed endpoint 'BooKStore.Controllers.AuthorsController.GetBooksByAuthorId (BooKStore)'
+2026-05-20 12:53:33.524 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7171/api/Authors/1/books - 200 null application/json; charset=utf-8 51.7293ms
