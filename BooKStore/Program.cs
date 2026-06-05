@@ -7,8 +7,12 @@ using BooKStore.Models;
 using BooKStore.Profiles;
 using BooKStore.Repositories;
 using BooKStore.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System.Text;
 
 namespace BooKStore
 {
@@ -44,8 +48,33 @@ namespace BooKStore
             //builder.Services.AddIdentityApiEndpoints<ApplicationUser>()
             //    .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            builder.Services.AddIdentity<ApplicationUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            // Add JWT Authentication Middleware configuration
+            var jwtSecret = builder.Configuration["JWT:Secret"] ?? "FallbackSecretKeyThatIsLongEnough123!";
+            var key = Encoding.UTF8.GetBytes(jwtSecret);
+
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.SaveToken = true;
+                options.RequireHttpsMetadata = false; // Set true in production environment
+                options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidAudience = builder.Configuration["JWT:ValidAudience"],
+                    ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(key)
+                };
+            });
 
 
             // Configure Serilog
